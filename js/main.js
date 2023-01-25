@@ -137,10 +137,10 @@ function updateTotal() {
             // total items
             total = total + (price * quantity);
         }
-        
-        //if price contain some cents value (round)
-        total = Math.round(total * 100) / 100;
-
-        document.getElementsByClassName('total-price')[0].innerText = '$' + total;
     }
+
+    //if price contain some cents value (round)
+    total = Math.round(total * 100) / 100;
+
+    document.getElementsByClassName('total-price')[0].innerText = '$' + total;
 }
